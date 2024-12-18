@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.admin-login.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h2>
+      <img src="logo.png" alt="Logo" class="topic-logo"> 
+      Admin Login
+    </h2>
+
+    <form onsubmit="login(event)">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="register-button">
+      <button type="button" onclick="window.location.href='admin-signup.html'">Register as Admin</button>
+    </div>
+  </div>
+</body>
+</html>

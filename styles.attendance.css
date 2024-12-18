@@ -1,0 +1,170 @@
+/* General reset and body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    background-color: #f0f2f5; /* Light background */
+    color: black; /* Default text color */
+}
+
+/* Header (Navbar) Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 80px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4267B2; /* Solid color for header */
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-left: 105px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #66d1ff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Attendance container */
+.attendance-container {
+    width: 80%;
+    margin: 150px auto 50px; /* Adjusted to account for fixed header */
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Add rounded corners */
+    position: relative;
+}
+
+/* Title (Fixed) */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #4267B2;
+    position: sticky; /* Make the title sticky */
+    top: 120px; /* Create a gap between the navbar and title when scrolling */
+    background-color: white;
+    z-index: 1;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow to differentiate from content */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+    position: sticky; /* Make the table header sticky */
+    top: 170px; /* Create gap between the table headers and title */
+    z-index: 2; /* Ensure it stays above the rows */
+}
+
+/* Ensure full row visibility after scrolling */
+table tr {
+    scroll-margin-top: 180px; /* This matches the sticky header height (170px) plus some margin */
+}
+
+table tr.absent {
+    background-color: #add8e6;
+}
+
+/* Button styling */
+button {
+    padding: 10px 30px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #365899;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .attendance-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    h1, table th {
+        top: 100px; /* Adjust the sticky positions for smaller screens */
+    }
+
+    table tr {
+        scroll-margin-top: 120px; /* Adjust for mobile view */
+    }
+}

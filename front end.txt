@@ -1,0 +1,559 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seat Reservation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="BookMySeat-dark-removebg-preview.png" alt="BookMySeat Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="landingPage.html">Home</a></li> <!-- Link to Profile Page -->
+            <li><a href="profile.html">Profile</a></li> <!-- Link to Bookings Page -->
+            <li><a href="mybookings.html">My Bookings</a></li> <!-- Link to My Bookings Page -->
+            <li><a href="#" id="logout-btn">Log Out</a></li> <!-- Log Out with redirect -->
+        </ul>
+    </nav>
+</header>
+
+  <div class="container">
+    <h1>Seat Reservation System</h1>
+
+    <!-- Date Picker -->
+    <div class="date-picker">
+      <label for="reservation-date">Select Date:</label>
+      <input type="date" id="reservation-date" min="" max="">
+    </div>
+
+    <!-- Seat Map -->
+<div class="seats">
+  <div class="seat available" data-seat="1"><span class="seat-number">1</span></div>
+  <div class="seat available" data-seat="2"><span class="seat-number">2</span></div>
+  <div class="seat available" data-seat="3"><span class="seat-number">3</span></div>
+  <div class="seat available" data-seat="4"><span class="seat-number">4</span></div>
+  <div class="seat available" data-seat="5"><span class="seat-number">5</span></div>
+  <div class="seat available" data-seat="6"><span class="seat-number">6</span></div>
+  <div class="seat available" data-seat="7"><span class="seat-number">7</span></div>
+  <div class="seat available" data-seat="8"><span class="seat-number">8</span></div>
+  <div class="seat available" data-seat="9"><span class="seat-number">9</span></div>
+  <div class="seat available" data-seat="10"><span class="seat-number">10</span></div>
+  <div class="seat available" data-seat="11"><span class="seat-number">11</span></div>
+  <div class="seat available" data-seat="12"><span class="seat-number">12</span></div>
+  <div class="seat available" data-seat="13"><span class="seat-number">13</span></div>
+  <div class="seat available" data-seat="14"><span class="seat-number">14</span></div>
+  <div class="seat available" data-seat="15"><span class="seat-number">15</span></div>
+  <div class="seat available" data-seat="16"><span class="seat-number">16</span></div>
+  <div class="seat available" data-seat="17"><span class="seat-number">17</span></div>
+  <div class="seat available" data-seat="18"><span class="seat-number">18</span></div>
+  <div class="seat available" data-seat="19"><span class="seat-number">19</span></div>
+  <div class="seat available" data-seat="20"><span class="seat-number">20</span></div>
+  <div class="seat available" data-seat="21"><span class="seat-number">21</span></div>
+  <div class="seat available" data-seat="22"><span class="seat-number">22</span></div>
+  <div class="seat available" data-seat="23"><span class="seat-number">23</span></div>
+  <div class="seat available" data-seat="24"><span class="seat-number">24</span></div>
+  <div class="seat available" data-seat="25"><span class="seat-number">25</span></div>
+  <div class="seat available" data-seat="26"><span class="seat-number">26</span></div>
+  <div class="seat available" data-seat="27"><span class="seat-number">27</span></div>
+  <div class="seat available" data-seat="28"><span class="seat-number">28</span></div>
+  <div class="seat available" data-seat="29"><span class="seat-number">29</span></div>
+  <div class="seat available" data-seat="30"><span class="seat-number">30</span></div>
+  <div class="seat available" data-seat="31"><span class="seat-number">31</span></div>
+  <div class="seat available" data-seat="32"><span class="seat-number">32</span></div>
+  <div class="seat available" data-seat="33"><span class="seat-number">33</span></div>
+  <div class="seat available" data-seat="34"><span class="seat-number">34</span></div>
+  <div class="seat available" data-seat="35"><span class="seat-number">35</span></div>
+  <div class="seat available" data-seat="36"><span class="seat-number">36</span></div>
+  <div class="seat available" data-seat="37"><span class="seat-number">37</span></div>
+  <div class="seat available" data-seat="38"><span class="seat-number">38</span></div>
+  <div class="seat available" data-seat="39"><span class="seat-number">39</span></div>
+  <div class="seat available" data-seat="40"><span class="seat-number">40</span></div>
+  <div class="seat available" data-seat="41"><span class="seat-number">41</span></div>
+  <div class="seat available" data-seat="42"><span class="seat-number">42</span></div>
+  <div class="seat available" data-seat="43"><span class="seat-number">43</span></div>
+  <div class="seat available" data-seat="44"><span class="seat-number">44</span></div>
+  <div class="seat available" data-seat="45"><span class="seat-number">45</span></div>
+  <div class="seat available" data-seat="46"><span class="seat-number">46</span></div>
+  <div class="seat available" data-seat="47"><span class="seat-number">47</span></div>
+  <div class="seat available" data-seat="48"><span class="seat-number">48</span></div>
+  <div class="seat available" data-seat="49"><span class="seat-number">49</span></div>
+  <div class="seat available" data-seat="50"><span class="seat-number">50</span></div>
+  <div class="seat available" data-seat="51"><span class="seat-number">51</span></div>
+  <div class="seat available" data-seat="52"><span class="seat-number">52</span></div>
+  <div class="seat available" data-seat="53"><span class="seat-number">53</span></div>
+  <div class="seat available" data-seat="54"><span class="seat-number">54</span></div>
+  <div class="seat available" data-seat="55"><span class="seat-number">55</span></div>
+  <div class="seat available" data-seat="56"><span class="seat-number">56</span></div>
+  <div class="seat available" data-seat="57"><span class="seat-number">57</span></div>
+  <div class="seat available" data-seat="58"><span class="seat-number">58</span></div>
+  <div class="seat available" data-seat="59"><span class="seat-number">59</span></div>
+  <div class="seat available" data-seat="60"><span class="seat-number">60</span></div>
+</div>
+    
+
+    <!-- Button to Book Seats -->
+    <button id="book-now" class="book-now">Book Now</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+script.js for index.html
+
+document.addEventListener('DOMContentLoaded', () => {
+  const seats = document.querySelectorAll('.seat');
+  const bookNowButton = document.getElementById('book-now');
+  const reservationDateInput = document.getElementById('reservation-date');
+  const logoutButton = document.getElementById('logout-btn'); // Log-out button
+  let selectedSeat = null;
+
+  // Set the min and max dates for the date picker
+  const today = new Date();
+  const maxDate = new Date(today);
+  maxDate.setDate(today.getDate() + 7); // Set max date to 7 days ahead
+
+  // Format the dates to yyyy-mm-dd for the input
+  const todayFormatted = today.toISOString().split('T')[0];
+  const maxDateFormatted = maxDate.toISOString().split('T')[0];
+
+  reservationDateInput.setAttribute('min', todayFormatted);
+  reservationDateInput.setAttribute('max', maxDateFormatted);
+
+  // Check if user is logged in
+  const userId = localStorage.getItem('userId');
+  const userName = localStorage.getItem('userName');
+
+  if (!userId) {
+    alert('You must be logged in to book a seat.');
+    window.location.href = 'login.html'; // Redirect to login page if not logged in
+    return;
+  }
+
+  // Handle Log Out functionality
+  logoutButton.addEventListener('click', () => {
+    // Clear user data from localStorage
+    localStorage.removeItem('userId');
+    localStorage.removeItem('userName');
+    
+    // Show alert message and redirect to login page
+    alert('Logged out successfully.');
+    window.location.href = 'login.html'; // Redirect to login.html
+  });
+
+  // Check if we are in edit mode
+  const editBookingId = localStorage.getItem('editBookingId');
+  const editBookingDate = localStorage.getItem('editBookingDate');
+  const editBookingSeat = localStorage.getItem('editBookingSeat');
+
+  if (editBookingId) {
+    // Pre-fill the date and seat selection for editing
+    reservationDateInput.value = formatDateForInput(editBookingDate);
+
+    // Pre-select the seat
+    seats.forEach(seat => {
+      if (seat.dataset.seat === editBookingSeat) {
+        seat.classList.add('selected');
+        selectedSeat = seat;
+      }
+    });
+  }
+
+  // Fetch booked seats when a date is selected
+  reservationDateInput.addEventListener('change', () => {
+    const selectedDate = reservationDateInput.value;
+    if (selectedDate) {
+      fetchBookedSeats(selectedDate); // Fetch booked seats for the selected date
+    }
+  });
+
+  // Fetch booked seats from the backend
+  function fetchBookedSeats(date) {
+    fetch(`http://localhost:8080/api/bookedSeats?date=${date}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch booked seats.');
+        }
+        return response.json();
+      })
+      .then(bookedSeats => {
+        // Reset all seats to available
+        seats.forEach(seat => {
+          seat.classList.remove('unavailable', 'selected');
+          seat.classList.add('available');
+          seat.disabled = false;
+        });
+
+        // Mark booked seats as unavailable
+        bookedSeats.forEach(seatNumber => {
+          const seatElement = document.querySelector(`.seat[data-seat="${seatNumber}"]`);
+          if (seatElement) {
+            seatElement.classList.remove('available');
+            seatElement.classList.add('unavailable');
+            seatElement.disabled = true; // Disable the booked seat
+          }
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching booked seats:', error);
+        alert('Failed to fetch booked seats. Please try again later.');
+      });
+  }
+
+  // Select/Deselect seat (only one seat allowed)
+  seats.forEach(seat => {
+    seat.addEventListener('click', () => {
+      if (seat.classList.contains('unavailable')) {
+        alert('This seat is already booked.');
+        return; // Prevent selection of unavailable seats
+      }
+
+      if (selectedSeat && selectedSeat !== seat) {
+        selectedSeat.classList.remove('selected');
+      }
+      seat.classList.toggle('selected');
+      selectedSeat = seat.classList.contains('selected') ? seat : null;
+    });
+  });
+
+  // Booking the seat and sending data to backend
+  bookNowButton.addEventListener('click', () => {
+    const reservationDate = reservationDateInput.value;
+
+    if (!reservationDate) {
+      alert('Please select a date for your reservation!');
+      return;
+    }
+
+    // Check if the selected date is a weekend (Saturday or Sunday)
+    const selectedDate = new Date(reservationDate);
+    const dayOfWeek = selectedDate.getDay();
+    if (dayOfWeek === 6 || dayOfWeek === 0) { // 6 = Saturday, 0 = Sunday
+      alert('Bookings are not allowed on weekends (Saturday or Sunday).');
+      return;
+    }
+
+    const seatNumber = selectedSeat ? selectedSeat.dataset.seat : null;
+
+    if (!seatNumber) {
+      alert('Please select a seat to book!');
+      return;
+    }
+
+    // Format the reservation date to dd-MM-yyyy
+    const formattedDate = `${selectedDate.getDate().toString().padStart(2, '0')}-${(selectedDate.getMonth() + 1).toString().padStart(2, '0')}-${selectedDate.getFullYear()}`;
+
+    const bookingData = {
+      date: formattedDate,
+      seatNumber: seatNumber,
+      user: {
+        id: userId,
+        name: userName
+      }
+    };
+
+    // If in edit mode, update the booking
+    if (editBookingId) {
+      fetch(`http://localhost:8080/api/bookings/${editBookingId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bookingData)
+      })
+      .then(response => response.json())
+      .then(() => {
+        alert('Booking updated successfully.');
+        localStorage.removeItem('editBookingId');
+        localStorage.removeItem('editBookingDate');
+        localStorage.removeItem('editBookingSeat');
+        window.location.href = 'mybookings.html'; // Redirect back to the bookings page
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to update booking. Please try again.');
+      });
+    } else {
+      // Create a new booking
+      fetch('http://localhost:8080/api/bookings', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bookingData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert(`Seat ${data.seatNumber} booked successfully for ${data.date}.`);
+        selectedSeat.classList.remove('selected');
+        selectedSeat = null;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Booking failed. Please try again.');
+      });
+    }
+  });
+});
+
+// Helper function to format date for input[type="date"]
+function formatDateForInput(dateStr) {
+  const parts = dateStr.split('-');
+  return `${parts[2]}-${parts[1]}-${parts[0]}`; // Format: yyyy-mm-dd for input element
+}
+
+login.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome Back!</h2>
+    <form id="login-form">
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" required><br>
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" required><br>
+      <button type="submit">Login</button>
+    </form>
+    <div id="g_id_onload"
+     data-client_id="144309326782-bgffgk1b5valj9ekptccar3unod7s0ld.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse"
+     data-auto_prompt="false">
+</div><br>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+
+    <p>Don't have an account? <a href="signup.html">Signup here</a></p> <!-- Added this line -->
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
+
+login.js
+
+document.getElementById('login-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+
+  fetch('http://localhost:8080/api/users/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email, password })
+  })
+  .then(response => response.json())
+  .then(data => {
+    localStorage.setItem('userId', data.id);
+    localStorage.setItem('userName', data.name);
+    alert(`Login successful! Welcome, ${data.name}`);
+    window.location.href = 'landingPage.html';  // Redirect to main page
+  })
+  .catch(error => console.error('Error:', error));
+});
+
+signup.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+    <form id="signup-form">
+      <label for="signup-name">Name:</label>
+      <input type="text" id="signup-name" required><br>
+      <label for="signup-email">Email:</label>
+      <input type="email" id="signup-email" required><br>
+      <label for="signup-password">Password:</label>
+      <input type="password" id="signup-password" required><br>
+      <button type="submit">Signup</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p> <!-- Added this line -->
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
+
+signup.js
+
+document.getElementById('signup-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+  
+    const name = document.getElementById('signup-name').value;
+    const email = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-password').value;
+  
+    fetch('http://localhost:8080/api/users/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, email, password })
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Signup successful! Please log in.');
+      window.location.href = 'login.html';  // Redirect to login page
+    })
+    .catch(error => console.error('Error:', error));
+  });
+  
+mybookings.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="mybookings.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" id="home-btn">Home</a></li>
+            <li><a href="#" id="my-bookings-btn">My Bookings</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>My Bookings</h1>
+        <table class="bookings-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Seat Number</th>
+                   
+                </tr>
+            </thead>
+            <tbody id="booking-rows">
+                <!-- Rows will be inserted dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
+
+bookings.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchBookings();
+});
+
+function fetchBookings() {
+  const userId = localStorage.getItem('userId'); // Retrieve the logged-in user ID
+
+  if (!userId) {
+    alert('You must be logged in to view your bookings.');
+    window.location.href = 'login.html'; // Redirect to login if not logged in
+    return;
+  }
+
+  fetch(`http://localhost:8080/api/mybookings?userId=${userId}`)
+    .then(response => response.json())
+    .then(data => {
+      const bookingRows = document.getElementById('booking-rows');
+      bookingRows.innerHTML = ''; // Clear any existing rows
+
+      if (data.length === 0) {
+        bookingRows.innerHTML = '<tr><td colspan="4">No bookings available</td></tr>';
+      } else {
+        data.forEach(booking => {
+          const formattedDate = booking.date;
+          const row = document.createElement('tr');
+          row.innerHTML = `
+              <td>${booking.userName}</td>
+              <td>${formattedDate}</td>
+              <td>${booking.seatNumber}</td>
+              <td>
+                <button class="edit-booking" data-id="${booking.id}" data-date="${formattedDate}" data-seat="${booking.seatNumber}">Edit</button>
+                <button class="cancel-booking" data-id="${booking.id}">Cancel</button>
+              </td>
+          `;
+          bookingRows.appendChild(row);
+        });
+
+        // Add event listeners for edit buttons
+        const editButtons = document.querySelectorAll('.edit-booking');
+        editButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            const bookingId = e.target.getAttribute('data-id');
+            const bookingDate = e.target.getAttribute('data-date');
+            const bookingSeat = e.target.getAttribute('data-seat');
+
+            // Store the current booking details in localStorage
+            localStorage.setItem('editBookingId', bookingId);
+            localStorage.setItem('editBookingDate', bookingDate);
+            localStorage.setItem('editBookingSeat', bookingSeat);
+
+            // Redirect to the home page for editing
+            window.location.href = 'index.html';
+          });
+        });
+
+        // Add event listeners for cancel buttons
+        const cancelButtons = document.querySelectorAll('.cancel-booking');
+        cancelButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            const bookingId = e.target.getAttribute('data-id');
+            cancelBooking(bookingId);
+          });
+        });
+      }
+    })
+    .catch(error => console.error('Error fetching bookings:', error));
+}
+
+function cancelBooking(bookingId) {
+  // Send a DELETE request to the backend to cancel the booking
+  fetch(`http://localhost:8080/api/bookings/${bookingId}`, {
+    method: 'DELETE',
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to cancel booking.');
+    }
+    return response.text(); // Expecting a simple success message as response
+  })
+  .then(message => {
+    alert(message);
+    fetchBookings(); // Refresh the bookings list after successful cancellation
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Failed to cancel booking. Please try again.');
+  });
+}
+

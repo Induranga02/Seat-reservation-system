@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  background: url(modern-minimalist-office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Container for the form */
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(198, 194, 194, 0.7); /* Solid semi-transparent background */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Stronger shadow for emphasis */
+  text-align: center;
+  position: relative;
+}
+
+/* Form Title (Login) */
+h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Form elements */
+form {
+  margin-top: 20px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9); /* Solid background for inputs */
+  color: #333; /* Input text color */
+  font-size: 16px;
+}
+
+/* Change the placeholder color */
+input::placeholder {
+  color: #666;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  background-color: #231266;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #231266;
+}
+
+/* Toggle buttons for User/Admin login */
+.login-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-toggle button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-toggle button.active {
+  background-color: #231266;
+  color: white;
+}
+
+.login-toggle button:hover {
+  background-color: #666;
+}
+
+/* Link to signup page */
+.signup-link {
+  color: #ffffff;
+  margin-top: 20px;
+  display: block;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.signup-link:hover {
+  color: #ffd700; /* Add hover effect */
+}
+
+/* Error messages (if any) */
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+/* Style for the labels and form text */
+label, p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button[type="submit"] {
+    padding: 12px;
+  }
+}
+
+/* Google Sign-In Button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.google-btn:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+

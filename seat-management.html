@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Management</title>
+    <link rel="stylesheet" href="styles.seat-management.css">
+    <script src="scripts.seat-management.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="BookMySeat-removebg-preview.png" alt="Logo"> <!-- Your logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="attendance.html" class="active">Attendance</a></li> <!-- Active class for the current page -->
+                <li><a href="seat-management.html">Seat Management</a></li>
+                <li><a href="#" id="logout-link">Logout</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="seat-management-container">
+        <h1>Seat Management</h1>
+
+        <table id="seatTable">
+            <thead>
+                <tr>
+                    <th>Seat Number</th>
+                    <th>Intern Name</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Seat management data will be inserted here -->
+            </tbody>
+        </table>
+
+        <button id="addSeat">Add Seat</button>
+    </div>
+</body>
+</html>

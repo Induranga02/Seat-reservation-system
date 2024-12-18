@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="login.css">
+  <script src="google-sign-in.js" defer type="module"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome Back!</h2>
+
+    <!-- Toggle between User and Admin login -->
+    <div class="login-toggle">
+      <button id="user-login-btn" class="active">User Login</button>
+      <button id="admin-login-btn">Admin Login</button>
+    </div>
+
+    <!-- User Login Form -->
+    <form id="user-login-form">
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" required><br>
+
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" required><br>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Admin Login Form (Initially Hidden) -->
+    <form id="admin-login-form" style="display: none;">
+      <label for="admin-username">Admin Username:</label>
+      <input type="text" id="admin-username"><br>
+
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password"><br>
+
+      <button type="submit">Login as Admin</button>
+    </form>
+
+    <!-- Google Sign-In Button -->
+    <button id="google-sign-in" class="google-btn">
+      <img src="google_2504914.png" alt="Google Logo" class="google-icon" />
+      Sign in with Google
+    </button>
+
+
+    <p>Don't have an account? <a href="signup.html">Signup here</a></p> <!-- Added this line -->
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seat Reservation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="BookMySeat-dark-removebg-preview.png" alt="BookMySeat Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="landingPage.html">Home</a></li> <!-- Link to Profile Page -->
+            <li><a href="profile.html">Profile</a></li> <!-- Link to Bookings Page -->
+            <li><a href="mybookings.html">My Bookings</a></li> <!-- Link to My Bookings Page -->
+            <li><a href="#" id="logout-btn">Log Out</a></li> <!-- Log Out with redirect -->
+        </ul>
+    </nav>
+</header>
+
+  <div class="container">
+    <h1>Seat Reservation System</h1>
+
+    <!-- Date Picker -->
+    <div class="date-picker">
+      <label for="reservation-date">Select Date:</label>
+      <input type="date" id="reservation-date" min="" max="">
+    </div>
+
+    <!-- Seat Map -->
+<div class="seats">
+  <div class="seat available" data-seat="1"><span class="seat-number">1</span></div>
+  <div class="seat available" data-seat="2"><span class="seat-number">2</span></div>
+  <div class="seat available" data-seat="3"><span class="seat-number">3</span></div>
+  <div class="seat available" data-seat="4"><span class="seat-number">4</span></div>
+  <div class="seat available" data-seat="5"><span class="seat-number">5</span></div>
+  <div class="seat available" data-seat="6"><span class="seat-number">6</span></div>
+  <div class="seat available" data-seat="7"><span class="seat-number">7</span></div>
+  <div class="seat available" data-seat="8"><span class="seat-number">8</span></div>
+  <div class="seat available" data-seat="9"><span class="seat-number">9</span></div>
+  <div class="seat available" data-seat="10"><span class="seat-number">10</span></div>
+  <div class="seat available" data-seat="11"><span class="seat-number">11</span></div>
+  <div class="seat available" data-seat="12"><span class="seat-number">12</span></div>
+  <div class="seat available" data-seat="13"><span class="seat-number">13</span></div>
+  <div class="seat available" data-seat="14"><span class="seat-number">14</span></div>
+  <div class="seat available" data-seat="15"><span class="seat-number">15</span></div>
+  <div class="seat available" data-seat="16"><span class="seat-number">16</span></div>
+  <div class="seat available" data-seat="17"><span class="seat-number">17</span></div>
+  <div class="seat available" data-seat="18"><span class="seat-number">18</span></div>
+  <div class="seat available" data-seat="19"><span class="seat-number">19</span></div>
+  <div class="seat available" data-seat="20"><span class="seat-number">20</span></div>
+  <div class="seat available" data-seat="21"><span class="seat-number">21</span></div>
+  <div class="seat available" data-seat="22"><span class="seat-number">22</span></div>
+  <div class="seat available" data-seat="23"><span class="seat-number">23</span></div>
+  <div class="seat available" data-seat="24"><span class="seat-number">24</span></div>
+  <div class="seat available" data-seat="25"><span class="seat-number">25</span></div>
+  <div class="seat available" data-seat="26"><span class="seat-number">26</span></div>
+  <div class="seat available" data-seat="27"><span class="seat-number">27</span></div>
+  <div class="seat available" data-seat="28"><span class="seat-number">28</span></div>
+  <div class="seat available" data-seat="29"><span class="seat-number">29</span></div>
+  <div class="seat available" data-seat="30"><span class="seat-number">30</span></div>
+  <div class="seat available" data-seat="31"><span class="seat-number">31</span></div>
+  <div class="seat available" data-seat="32"><span class="seat-number">32</span></div>
+  <div class="seat available" data-seat="33"><span class="seat-number">33</span></div>
+  <div class="seat available" data-seat="34"><span class="seat-number">34</span></div>
+  <div class="seat available" data-seat="35"><span class="seat-number">35</span></div>
+  <div class="seat available" data-seat="36"><span class="seat-number">36</span></div>
+  <div class="seat available" data-seat="37"><span class="seat-number">37</span></div>
+  <div class="seat available" data-seat="38"><span class="seat-number">38</span></div>
+  <div class="seat available" data-seat="39"><span class="seat-number">39</span></div>
+  <div class="seat available" data-seat="40"><span class="seat-number">40</span></div>
+  <div class="seat available" data-seat="41"><span class="seat-number">41</span></div>
+  <div class="seat available" data-seat="42"><span class="seat-number">42</span></div>
+  <div class="seat available" data-seat="43"><span class="seat-number">43</span></div>
+  <div class="seat available" data-seat="44"><span class="seat-number">44</span></div>
+  <div class="seat available" data-seat="45"><span class="seat-number">45</span></div>
+  <div class="seat available" data-seat="46"><span class="seat-number">46</span></div>
+  <div class="seat available" data-seat="47"><span class="seat-number">47</span></div>
+  <div class="seat available" data-seat="48"><span class="seat-number">48</span></div>
+  <div class="seat available" data-seat="49"><span class="seat-number">49</span></div>
+  <div class="seat available" data-seat="50"><span class="seat-number">50</span></div>
+  <div class="seat available" data-seat="51"><span class="seat-number">51</span></div>
+  <div class="seat available" data-seat="52"><span class="seat-number">52</span></div>
+  <div class="seat available" data-seat="53"><span class="seat-number">53</span></div>
+  <div class="seat available" data-seat="54"><span class="seat-number">54</span></div>
+  <div class="seat available" data-seat="55"><span class="seat-number">55</span></div>
+  <div class="seat available" data-seat="56"><span class="seat-number">56</span></div>
+  <div class="seat available" data-seat="57"><span class="seat-number">57</span></div>
+  <div class="seat available" data-seat="58"><span class="seat-number">58</span></div>
+  <div class="seat available" data-seat="59"><span class="seat-number">59</span></div>
+  <div class="seat available" data-seat="60"><span class="seat-number">60</span></div>
+</div>
+    
+
+    <!-- Button to Book Seats -->
+    <button id="book-now" class="book-now">Book Now</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

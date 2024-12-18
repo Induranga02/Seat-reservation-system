@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  background: url(duplo24.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+
+}
+
+.container {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  height: 100px;
+  z-index: 2;
+  position: relative;;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:transparent; /* Adds slight background for visibility while scrolling */
+  transition: background-color 0.3s ease; /* Smooth transition on scroll */
+}
+
+/* Logo Styling */
+
+.logo {
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+  margin-left: 105px;
+}
+
+.logo img {
+  padding-top: 24px;
+  width: 275px;
+  height: auto;
+}
+
+/* Navigation Bar */
+
+header nav {
+  flex-grow: 1; /* Allow nav to take remaining space */
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+header nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #66d1ff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Date Picker */
+.date-picker {
+  margin-bottom: 20px;
+}
+
+input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Seat Map */
+.seat-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Adjust the grid to fit within a 1200px container */
+.seats {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Adjust columns for more seats */
+  gap: 15px;
+}
+
+/* Each seat styled with the PNG background */
+.seat {
+  position: relative; /* To allow positioning of seat number */
+  width: 45px;
+  height: 60px; /* Adjust height based on image */
+  background-image: url('chair.png'); /* Path to your seat image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Position seat number at the bottom */
+}
+
+/* Seat Number Styling */
+.seat-number {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 36px; /* Add space between number and the bottom */
+}
+
+/* Unavailable Seat Styling */
+.seat.unavailable {
+  filter: grayscale(100%); /* Grayscale effect for unavailable seats */
+  cursor: not-allowed;
+}
+
+.seat.available:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+.seat.selected {
+  border: 2px solid #00aaff;
+  transform: scale(1.1);
+}
+
+/* Book Now Button */
+.book-now {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:#231266;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #231266;
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .seats {
+    grid-template-columns: repeat(2, 50px);
+    gap: 8px;
+  }
+
+  .book-now {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}

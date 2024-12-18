@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Date Picker */
+.date-picker {
+  margin-bottom: 20px;
+}
+
+input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Seat Map */
+.seat-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  gap: 10px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: 2px solid #888;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Unavailable (booked) seats */
+.seat.unavailable {
+  background-color: red; /* Red for unavailable seats */
+  cursor: not-allowed;
+}
+
+/* Held seats */
+.seat.held {
+  background-color: lightyellow; /* Yellow for held seats */
+  cursor: not-allowed;
+  border-color: gold;
+}
+
+.seat.held:hover::before {
+  content: "This seat is held by the admin at the moment";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+/* Available seats hover effect */
+.seat.available:hover {
+  background-color: #90ee90;
+}
+
+/* Selected seat */
+.seat.selected {
+  background-color: #00aaff;
+  border-color: #0077cc;
+}
+
+/* Book Now Button */
+.book-now {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #218838;
+}
+
+/* Table Styles for My Bookings Page */
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.bookings-table th, .bookings-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.bookings-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.bookings-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bookings-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bookings-table td {
+  text-align: center;
+}
+
+#no-bookings-message {
+  color: #666;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .seats {
+    grid-template-columns: repeat(2, 50px);
+    gap: 8px;
+  }
+
+  .book-now {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .bookings-table th, .bookings-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Form elements */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Headings */
+h2 {
+  color: #333;
+}
+
+/* Error messages (if any) */
+.error {
+  color: red;
+  margin-top: 20px;
+}

@@ -1,0 +1,183 @@
+/* General reset and body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Blurred background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('modern-minimalist-office.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 100px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:transparent; /* Adds slight background for visibility while scrolling */
+    transition: background-color 0.3s ease; /* Smooth transition on scroll */
+}
+
+/* Logo Styling */
+
+.logo {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    margin-left: 105px;
+}
+
+.logo img {
+    padding-top: 24px;
+    width: 275px;
+    height: auto;
+}
+
+/* Navigation Bar */
+
+header nav {
+    flex-grow: 1; /* Allow nav to take remaining space */
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #66d1ff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main content section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: calc(100vh - 100px);
+    z-index: 1;
+    margin-top: 100px;
+}
+
+/* Left-side content (text) */
+.left-content h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.left-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+/* Call-to-action button */
+.cta-button {
+    background-color: #ff0066;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc0052;
+}
+
+/* Right-side content */
+.right-content {
+    position: relative; /* Ensure this element is the reference for the logo's position */
+    display: flex; /* Use flexbox to position the content inside */
+    justify-content: flex-end; /* Align it to the right */
+    align-items: center; /* Vertically center the image */
+    height: 100%; /* Make sure it takes up the height of the content */
+    margin-right: 50px; /* Adds space from the right edge */
+}
+
+.right-content img {
+    width: 425px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Position the image freely */
+    top: -60px; /* Move it higher up */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-content {
+        max-width: 100%;
+    }
+
+    .left-content h1 {
+        font-size: 36px;
+    }
+
+    .right-content {
+        margin-top: 30px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-content img {
+        width: 200px;
+    }
+}

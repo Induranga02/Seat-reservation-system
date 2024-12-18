@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="mybookings.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" id="home-btn">Home</a></li>
+            <li><a href="#" id="my-bookings-btn">My Bookings</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>My Bookings</h1>
+        <table class="bookings-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Seat Number</th>
+                   
+                </tr>
+            </thead>
+            <tbody id="booking-rows">
+                <!-- Rows will be inserted dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>

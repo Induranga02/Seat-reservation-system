@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="styles.attendance.css">   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="BookMySeat-removebg-preview.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="attendance.html" class="active">Attendance</a></li>
+                <li><a href="seat-management.html">Seat Management</a></li>
+                <li><a href="#" id="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="attendance-container">
+        <h1>Attendance Management</h1>
+
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Intern Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically loaded here -->
+            </tbody>
+        </table>
+
+        <button id="saveAttendance">Save Attendance</button>
+        <button id="downloadAttendance">Download Attendance Report</button>
+    </div>
+
+    <script src="scripts.attendance.js" defer></script>
+</body>
+</html>

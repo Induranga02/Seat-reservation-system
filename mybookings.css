@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  background: url(duplo24.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles for My Bookings Page */
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.bookings-table th, .bookings-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.bookings-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.bookings-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bookings-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bookings-table td {
+  text-align: center;
+}
+
+#no-bookings-message {
+  color: #666;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .bookings-table th, .bookings-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,159 @@
+/* General reset and body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    color: white;
+    overflow-x: hidden; /* Keep this to prevent horizontal scrolling */
+}
+
+/* Add this pseudo-element for the blurred background */
+body::before {
+    content: '';
+    position: fixed; /* Ensure it stays in place during scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('modern-minimalist-office.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(2px); /* Adjust the blur intensity as needed */
+    z-index: -1; /* Ensure the blurred background stays behind content */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the nav */
+    align-items: center; /* Vertically center the items */
+    padding: 20px 50px;
+    height: 100px; /* Fixed height for the header */
+    z-index: 1;
+    position: fixed; /* Change to fixed */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: transparent; /* Set to transparent for blending */
+}
+
+/* Logo Styling */
+.logo {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    margin-left: 105px;
+}
+
+.logo img {
+    width: 250px; /* Adjust the size as necessary */
+    height: auto; /* Make sure the height adjusts based on the width */
+}
+
+/* Navigation Bar */
+header nav {
+    flex-grow: 1; /* Allow nav to take remaining space */
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Increase the gap between menu items for even spacing */
+    align-items: center; /* Vertically center the nav items */
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    padding: 10px 15px; /* Add padding for better spacing */
+    border-radius: 5px; /* Round the corners */
+    transition: background-color 0.3s, color 0.3s; /* Add transitions for smooth effects */
+}
+
+header nav ul li a:hover {
+    color: #66d1ff; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Add a slight background color on hover */
+}
+
+/* Main content section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Reduced the top padding to bring content closer to nav bar */
+    height: calc(100vh - 100px); /* Full screen height minus header */
+    position: relative;
+    z-index: 1;
+    margin-top: 100px; /* Add margin top to push content below the fixed header */
+}
+
+/* Left-side content (text) */
+.left-content {
+    max-width: 50%;
+    margin-top: -20px; /* Adjust the top margin to reduce the gap */
+}
+
+.left-content h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.left-content h1 span {
+    color: #1f5cb3;
+}
+
+.left-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+/* Call-to-action button */
+.cta-button {
+    background-color: #ff0066;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc0052;
+}
+
+.right-content {
+    position: relative; /* Ensure this element is the reference for the logo's position */
+    display: flex; /* Use flexbox to position the content inside */
+    justify-content: flex-end; /* Align it to the right */
+    align-items: center; /* Vertically center the image */
+    height: 100%; /* Make sure it takes up the height of the content */
+    margin-right: 50px; /* Adds space from the right edge */
+}
+
+.right-content img {
+    width: 450px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Position the image freely */
+    top: -100px; /* Move it higher up */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}

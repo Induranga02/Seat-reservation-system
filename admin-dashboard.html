@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.admin-dashboard.css">
+    <script src="scripts.admin-dashboard.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="BookMySeat-removebg-preview.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="seat-management.html">Seat Management</a></li>
+            <li><a href="#" id="logout-link">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Welcome, Admin</h1>
+            <p>Manage the interns and monitor activities easily.</p>
+        </header><br><br>
+
+        <section id="dashboard" class="dashboard-section">
+            <h2>Dashboard Overview</h2><br>
+
+            <div class="date-container">
+                <div class="card" id="date-card">
+                    <h3>Today's Date</h3>
+                    <p id="todayDate">Loading...</p>
+                </div>
+            </div>
+            <br>
+    
+            <!-- Other cards in a row below the date card -->
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Total Interns</h3>
+                    <p id="totalInterns">75</p>
+                </div>
+                <div class="card">
+                    <h3>Seats Occupied</h3>
+                    <p id="seatsOccupied">Loading...</p>
+                </div>
+                <div class="card">
+                    <h3>Seats Available</h3>
+                    <p id="seatsAvailable">Loading...</p>
+                </div>
+            </div>
+            
+            <br><br>
+            
+            <!-- Recent bookings card now has its own row -->
+            <div class="recent-bookings-card">
+                <h3>Recent Bookings</h3>
+                <ul id="recentBookings">
+                    <!-- Recent bookings will be dynamically inserted here -->
+                </ul>
+            </div>            
+            </div>
+        </section>
+    </div>
+</body>
+</html>
